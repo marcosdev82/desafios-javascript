@@ -4,13 +4,24 @@
 // Exemplo (Entrada --> Saída)
 
 var capitals = function (word) {
-    return word.split('').reduce((indices, letter, index) => {
-      if (letter === letter.toUpperCase()) {
-        indices.push(index);
-      }
-      return indices;
-    }, []);
-  };
+  return word.split('').reduce((indices, letter, index) => {
+    if (letter === letter.toUpperCase()) {
+      indices.push(index);
+    }
+    return indices;
+  }, []);
+};
+
+// outra forma de fazer
+
+var capitals = function (word) {
+  let arr = []
+  word.split('').forEach(function(value, indice){
+    if (value === value.toUpperCase()) {
+      arr.push(indice)
+    }
+  })
+  return arr;
+};
   
-  console.log(capitals('CodEWaRs')); // [0, 3, 4, 6]
-  
+console.log(capitals('CodEWaRs')); // [0, 3, 4, 6]
