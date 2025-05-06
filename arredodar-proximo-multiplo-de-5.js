@@ -17,13 +17,18 @@
 
 // Você pode assumir que todas as entradas são números inteiros válidos.
 
+// function roundToNext5(numero) {
+//     if (numero > 0) {
+//       return Math.ceil(numero / 5) * 5;
+//     } else if (numero === 0) {
+//         return 0;
+//     } else {
+//       const arredondado = Math.ceil(numero / 5) * 5;
+//         return arredondado > 0 ? 0 : arredondado;
+//     }
+// }
+
+// versão simplificada
 function roundToNext5(numero) {
-    if (numero > 0) {
-      return Math.ceil(numero / 5) * 5;
-    } else if (numero === 0) {
-        return 0;
-    } else {
-      const arredondado = Math.ceil(numero / 5) * 5;
-        return arredondado > 0 ? 0 : arredondado;
-    }
+  return Math.ceil(numero / 5) * 5;
 }
