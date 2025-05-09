@@ -9,15 +9,16 @@
 // 8 -> 36 (1 + 2 + 3 + 4 + 5 + 6 + 7 + 8)
 
 
-﻿
 var summation = function (num) {
-   let result = 0;
-   for(i=1; i <= num; i++) {
-       result+=i;
-   }  
-   return result;
+    let result = 0;
+    for(i=1; i <= num; i++) {
+      result+=i;
+    }  
+    return result;
 }
 
-summation(1) //  1
-summation(2) //  3
-summation(8) // 36
+// let summation = (n) => n * (n + 1) / 2;
+
+console.log(summation(1)) //  1
+console.log(summation(2)) //  3
+console.log(summation(8)) // 36
