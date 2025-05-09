@@ -7,12 +7,20 @@
 // Você pode assumir, para o propósito deste kata, que o array fornecido não estará vazio.
 
 function findSmallestInt(arr) {
-   arr.sort((a, b) => a - b)
-   return arr[0];
+   return arr.sort((a, b) => a - b)[0]
 }
+
+// Feita por terceiros
+// function findSmallestInt(arr) {
+  
+//   return Math.min(...arr);
+// }
 
 console.log(findSmallestInt([78,56,232,12,8])) // 8 
 console.log(findSmallestInt([78,56,232,12,18])) //12 
 console.log(findSmallestInt([78,56,232,412,228])) // 56 
 console.log(findSmallestInt([78,56,232,12,0])) // 0 
 console.log(findSmallestInt([1,56,232,12,8])) // 1 
+
+// exemplo do teste
+console.log(findSmallestInt([34, -345, -1, 100])) // 2
