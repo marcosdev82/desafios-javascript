@@ -19,7 +19,7 @@ let input =  [[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]]
 function openOrSenior(data){
   let result = []
   for (value in data){
-    if (data[value][0] >= 55 && data[value][1] >= 7){
+    if (data[value][0] >= 55 && data[value][1] > 7){
        result.push("Senior")
     }  else {
         result.push("Open")
@@ -33,11 +33,10 @@ function openOrSenior(data){
 function openOrSenior(data){
   let result = []
   for (const [age, handicap] of data){
-    result.push(age >= 55 && handicap >= 7 ? "Senior" : "Open")
+    result.push(age >= 55 && handicap > 7 ? "Senior" : "Open")
   }
   return result
 }
-
 
 console.log( openOrSenior([[45, 12],[55,21],[19, -2],[104, 20]])) // ['Open', 'Senior', 'Open', 'Senior']
 console.log( openOrSenior([[3, 12],[55,1],[91, -2],[53, 23]])) // ['Open', 'Open', 'Open', 'Open']
