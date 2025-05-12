@@ -5,14 +5,14 @@
 
 
 // feita por mim
-function areYouPlayingBanjo(name) {
-    let str = name.substr(0, 1)
+// function areYouPlayingBanjo(name) {
+//     let str = name.substr(0, 1)
 
-    if(str.toLowerCase() === "r"){
-        return name + " plays banjo" 
-    }  
-    return name + " does not play banjo"
-}
+//     if(str.toLowerCase() === "r"){
+//         return name + " plays banjo" 
+//     }  
+//     return name + " does not play banjo"
+// }
 
 // Feita pelo copilot
 function areYouPlayIngBanjo(name) {
