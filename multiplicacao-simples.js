@@ -10,6 +10,11 @@ function simpleMultiplication(number) {
   
 }
 
+// forma simplificada
+function simpleMultiplication(n) {
+    return number * (number % 2 ? 9 : 8);
+}
+
 console.log(simpleMultiplication(2))
 console.log(simpleMultiplication(1))
 console.log(simpleMultiplication(8))
