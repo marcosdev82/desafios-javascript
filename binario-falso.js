@@ -3,26 +3,25 @@
 
 // Nota: a entrada nunca será uma string vazia
 
-// Feito por mim
-function fakeBin(x){
-    let bin = ''
-    for (let value of x) {
-       if (value >= 5) { 
-           bin = bin + "1";            
-       } else {
-           bin = bin + "0";   
-       }
-
-    }
-    return bin;
-}
+// Feito por mim - exercício mental 
+// function fakeBin(x){ //45385593107843568
+//     let bin = ''  // 01011110001100111
+//     for (let value of x) { // 4,5,3,8,5,5,9,3,1,0,7,8,4,3,5,6,8
+//        if (value >= 5) { 
+//            bin = bin + 1;            
+//        } else {
+//            bin = bin + 0;   
+//        }
+//     }
+//     return bin;
+// }
 
 // forma otimizada de fazer a mesma coisa
-function fakeBin(x) {
-    return x.split('').map(n => n < 5 ? 0 : 1).join('');
+
+function fakeBin(x) { //53855931078435684
+    return x.split('').map(n => n < 5 ? 0 : 1).join(''); //4,5,8
 }
 
-
-console.log(fakeBin('45385593107843568'), '01011110001100111');
-console.log(fakeBin('509321967506747'), '101000111101101'); 
-console.log(fakeBin('366058562030849490134388085'), '011011110000101010000011011');
+console.log(fakeBin('45385593107843568'));
+console.log(fakeBin('509321967506747')); 
+console.log(fakeBin('366058562030849490134388085'));
