@@ -10,7 +10,7 @@
 
 function abbrevName(name){
   let  nomes = name.split(' ')
-  return `${nomes[0][0]}.${nomes[1][0]}` 
+  return `${nomes[0][0].toUpperCase()}.${nomes[1][0].toUpperCase()}` 
 }
 
 // forma simplificada
