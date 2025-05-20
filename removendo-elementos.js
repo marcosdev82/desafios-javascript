@@ -6,7 +6,7 @@
 
 // Nenhuma das matrizes estará vazia, então você não precisa se preocupar com isso!
 
-
+// minha script
 function removeEveryOther(arr){
     const newArr = []
     for(let k in arr) {
@@ -15,6 +15,13 @@ function removeEveryOther(arr){
       }
     }
     return newArr;
+}
+
+// script resumido
+function removeEveryOther(arr){
+  return arr.filter(function(elem, index) {
+    return index % 2 === 0;
+  });
 }
 
 console.log(removeEveryOther(['Hello', 'Goodbye', 'Hello Again'])) // ['Hello', 'Hello Again']
