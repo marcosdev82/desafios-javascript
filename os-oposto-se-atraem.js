@@ -5,12 +5,18 @@
 // estiverem apaixonadas e false se não estiverem.
 
 
+// o que eu fiz
 function lovefunc(flower1, flower2){
-   if ((flower1 % 2 == 0 && flower2 % 2 != 0) || (flower1 % 2 == 1 && flower2 % 2 == 0)){
-      return true;
-   }  
-    
-   return false;
+    if ((flower1 % 2 == 0 && flower2 % 2 != 0) || (flower1 % 2 == 1 && flower2 % 2 == 0)){
+    return true;
+    }  
+
+    return false;
+}
+
+// simplificado
+function lovefunc(flower1, flower2){
+  return (flower1 + flower2) % 2 == 1;
 }
 
 console.log(lovefunc(1,4)) // true
