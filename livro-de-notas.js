@@ -11,7 +11,7 @@
 
 function getGrade(s1, s2, s3) {
     const pontuacao = (s1 + s2 + s3) / 3
-    let num = '';
+    let num = ' ';
     if (pontuacao >= 90 && pontuacao <= 100) {
         num = 'A'
     } else if (pontuacao >= 80 && pontuacao < 90) {
@@ -20,10 +20,19 @@ function getGrade(s1, s2, s3) {
         num = 'C'
     } else if (pontuacao >= 60 && pontuacao < 70) {
         num = 'D'
-    } else if (pontuacao >= 0 && pontuacao < 60) {
+    } else (pontuacao >= 0 && pontuacao < 60) {
         num = 'F'
     }
     return num
+}
+
+function getGrade (s1, s2, s3) {
+    const score = (s1 + s2 + s3) / 3;
+    if (score >= 90) return 'A';
+    if (score >= 80) return 'B';
+    if (score >= 70) return 'C';
+    if (score >= 60) return 'D';
+    return 'F';
 }
 
 getGrade(95,90,93) // 'A'
